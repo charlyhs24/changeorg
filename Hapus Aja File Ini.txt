@@ -1,0 +1,1 @@
+Karena akun git lab teman-teman memiliki role sebagai "Developer", secara default tidak dapat melakukan clone / push tanpa izin owner (pemilik repo). Maka dari itu, file ini dibuat. Silakan dihapus jika teman-teman berhasil clone
