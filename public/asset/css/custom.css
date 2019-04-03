@@ -1,0 +1,93 @@
+body {
+    background-image: url('https://static.change.org/home/illustration-world-map-2015-08-18.gif');
+    background-size: contain;
+    font-size: 1rem;
+    color: #363135;
+    line-height: 1.5;
+}
+.navbar-expand-lg .navbar-brand {
+    color: #ec2c22;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.4rem !important;
+}
+.navbar-expand-lg .navbar-brand:hover {
+    color: #ec2c22;
+}
+.red{
+    color: #ec2c22;
+}
+
+.container{
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar-nav{
+    flex-direction: row !important;
+}
+
+.navbar-light .navbar-toggler{
+    border: none;
+}
+
+ul li .nav-link{
+    padding-left: 30px !important;
+    padding-right: 0 !important;
+}
+
+ul li a i{
+    vertical-align: middle;
+}
+
+ul li a .fa-bell,
+ul li a .fa-user-circle{
+    font-size: 19px;
+}
+
+.fa-bars{
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.dropdown-divider{
+    margin: .5rem auto !important;
+    width: 73%;
+}
+
+.navbar-nav .dropdown-menu{
+    position: absolute !important;
+}
+
+.nav-small{
+    display: none;
+}
+
+@media (max-width: 992px) { 
+    .nav-big{
+        display: none;
+    }
+    .nav-small{
+        display: block;
+    }
+    .container{
+        width: 100%;
+    }
+}
+
+
+
+/* footer */
+.footer {
+    /* position: ; */
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
