@@ -13,9 +13,44 @@ body {
 
     display: block;
 }
+.container h3 {
+    padding-left: 20px; 
+}
 /* .container {
     padding-left: 15px;
     margin-left: auto;
     padding-right: 15px;
     margin-right: auto;
 } */
+.nav-item a {
+    color: black;
+}
+.nav-link.active {
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: red;
+    font-weight: bold;
+}
+/* card */
+.card-progress {
+    padding: 0;
+    background-color: #ffffff;
+    margin-left: 20px;
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid #ece9ec !important;
+    border-left: 1px solid #ece9ec !important;
+    border-top: 1px solid #ece9ec !important;
+    border-right: 1px solid #ece9ec !important;
+    border-radius: 5px;
+}
+.card-progress a {
+    text-decoration:  none;
+    color: black;
+}
+.pda {
+    padding: 20px !important;
+}
+.progress-bar.bg-orange{
+    background-color: tomato;
+}
