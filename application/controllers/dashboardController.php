@@ -53,4 +53,10 @@ class dashboardController extends CI_Controller {
 		$this->load->view('template/telusuri');
         	$this->load->view('template/footer');
 	}
+	public function myPetitions(){
+		$data['link'] = "public/asset/css/module/my-petition.css";
+		$this->load->view('template/header',$data);
+		$this->load->view('template/my-petition');
+        	$this->load->view('template/footer');
+	}
 }
