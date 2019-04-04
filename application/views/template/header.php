@@ -13,7 +13,7 @@
     <title>Document</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light nav-big">
+    <nav class="navbar navbar-expand-lg navbar-light nav-big">
         <div class="container">
             <a class="navbar-brand" href="#">change.org</a>
  
@@ -73,7 +73,7 @@
             </ul>
         </div>
       </nav>
-      <div class="container">
+
 
 
 

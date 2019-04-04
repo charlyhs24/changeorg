@@ -58,3 +58,4 @@ $route['card'] = 'dashboardController/card';
 $route['home'] = 'dashboardController/home';
 $route['petition-users'] = 'dashboardController/petitionUser';
 $route['petition-create'] = 'dashboardController/petitionCreate';
+$route['petitions-tabs'] = 'dashboardController/pertitionsTabs';

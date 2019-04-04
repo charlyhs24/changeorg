@@ -1,0 +1,21 @@
+.nav {
+    background-color: #ffffff !important;
+    border-bottom: 3px solid transparent;
+}
+body {
+    background-image: none;
+    /* background-color: #f6f4f6 !important; */
+    background-color: #ffffff !important;
+    /* background-color: #f8f9fa !important; */
+}
+.main {
+    background-color: #f8f9fa !important;
+
+    display: block;
+}
+/* .container {
+    padding-left: 15px;
+    margin-left: auto;
+    padding-right: 15px;
+    margin-right: auto;
+} */

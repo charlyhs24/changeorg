@@ -76,9 +76,14 @@ ul li a .fa-user-circle{
     .container{
         width: 100%;
     }
+    .navbar .navbar-expand-lg {
+        background-color: #ffffff;
+    }
 }
 
-
+.navbar .navbar-expand-lg .navbar-light .nav-big {
+    border-bottom: 3px yellow transparent;
+}
 
 /* footer */
 .footer {
