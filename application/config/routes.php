@@ -49,7 +49,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'welcome';
+$route['default_controller'] = 'petitionController';
 $route['template'] = '';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
@@ -61,3 +61,4 @@ $route['petition-create'] = 'petitionController/create';
 $route['petitions-tabs'] = 'dashboardController/pertitionsTabs';
 $route['my-petitions'] = 'dashboardController/myPetitions';
 $route['petition-show'] = 'petitionController/show';
+$route['upload'] = 'petitionController/testdata';

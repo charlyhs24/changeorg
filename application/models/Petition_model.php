@@ -11,8 +11,8 @@ class Petition_model extends CI_Model {
         $query = $this->db->get('petisi');
         return $query->row();
     }
-    public function insertPetition(){
-
+    public function insertPetition($data){
+        return $this->db->insert('petisi', $data);
     }
     
 }

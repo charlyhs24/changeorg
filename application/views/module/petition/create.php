@@ -21,7 +21,7 @@
             <div id="petisi_judul" class="tab-pane fade col-sm-8 form center-content">
                 <h3>Tulis Judul Petisimu</h3>
                 <p class="text-justify">Ini hal pertama yang akan dilihat orang. Raih perhatian mereka dengan judul singkat dan fokus kepada perubahan yang diminta.</p>
-                <input type="text" class="form-control" name="judul" id="judul" placeholder="apa yang ingin kamu mencapai?">
+                <input type="text" class="form-control" name="judul" id="judul" placeholder="apa yang ingin kamu mencapai?" required>
                 <div class="text-right">
                     <small>90</small><br>
                     <a href="#petisi_kepada" data-toggle="tab"><button class="btn btn-primary" id="btn-form-judul">Lanjut</button></a>
@@ -41,7 +41,7 @@
             <div id="petisi_kepada" class="tab-pane fade col-sm-8 form center-content">
                 <h3>Tentukan pengambil keputusan</h3>
                 <p class="text-justify">Ini adalah orang, organisasi atau kelompok, yang bisa membuat keputusan untuk menyelesaikan masalahmu. Change.org akan mengirim kepada mereka update tentang petisimu dan kami akan mendorong respon.</p>
-                <input type="text" class="form-control" name="kepada" id="kepada" placeholder="Siapa yang punya kewenangan pada perubahan ini?"><br>
+                <input type="text" class="form-control" name="kepada" id="kepada" placeholder="Siapa yang punya kewenangan pada perubahan ini?" required><br>
                 <div class="text-right">
                     <a href="#petisi_isi" data-toggle="tab"><button class="btn btn-primary" id="btn-form-kepada">Lanjut</button></a>
                 </div><br>
@@ -60,7 +60,7 @@
             <div id="petisi_isi" class="tab-pane fade col-sm-8 form center-content">
                 <h3>Jelaskan masalah yang ingin kamu selesaikan</h3>
                 <p class="text-justify">Jelasakan masalah yang kamu ingin selesaikan dan bagaimana perubahan ini berdampak bagimu, keluargamu, atau komunitasmu.</p>
-                <textarea class="form-control" name="isi" id="isi" cols="30" rows="5"></textarea><br>
+                <textarea class="form-control" name="isi" id="isi" cols="30" rows="5" required></textarea><br>
                 <div class="text-right">
                     <a href="#petisi_media" data-toggle="tab"><button class="btn btn-primary" id="btn-form-isi">Lanjut</button></a>
                 </div><br>
@@ -80,16 +80,19 @@
         
             <!-- foto/video dari petisi -->
             <div id="petisi_media" class="tab-pane fade col-sm-8 form center-content">
-                <h3>Tambah foto atau video</h3>
-                <p class="text-justify">Petisi yang berisi foto dapatkan 6 kali lebih banyak tanda tangan dari petisi yang tidak. Tentukan foto yang menunjukkan emosi dari petisimu.</p>
-                <label class="fileContainer text-center">
-                    Click here to trigger the file uploader!
-                    <input type="file"/>
-                </label>
+                <form id="form-submit" action="#" enctype="multipart/form-data" method="post">
+                    <h3>Tambah foto atau video</h3>
+                    <p class="text-justify">Petisi yang berisi foto dapatkan 6 kali lebih banyak tanda tangan dari petisi yang tidak. Tentukan foto yang menunjukkan emosi dari petisimu.</p>
+                    <label class="fileContainer text-center">
+                        Click here to trigger the file uploader!
+                        <input type="file" name="userfile" size="20" required/>                      
+                    </label>
+                    <br>
+                    <div class="text-right">
+                        <button type="submit" class="btn btn-primary" id="btn-form-kepada">Lanjut</button>
+                    </div>
+                </form>
                 <br>
-                <div class="text-right">
-                    <a href=""><button class="btn btn-primary" id="btn-form-kepada">Lanjut</button></a>
-                </div><br>
                 <div class="alert alert-secondary">
                     <strong>Tentukan foto yang menunjukkan emosi dari petisi Anda</strong>
                     <p>Foto berisi orang atau hewan bekerja dengan baik.</p>
@@ -104,5 +107,6 @@
         </div>
     </div>
 </div>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="<?php echo base_url();?>public/asset/javascript/module/petition/create.js"></script>

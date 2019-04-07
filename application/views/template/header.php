@@ -15,17 +15,17 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light nav-big">
         <div class="container">
-            <a class="navbar-brand" href="#">change.org</a>
+            <a class="navbar-brand" href="<?= site_url();?>">change.org</a>
  
           <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Mulai Petisi</a>
+                    <a class="nav-link" href="<?= site_url();?>petitionController/create">Mulai Petisi</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Petisi Saya</a>
+                    <a class="nav-link" href="<?= site_url();?>petitionController/petitionUser">Petisi Saya</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Telusuri</a>
+                    <a class="nav-link" href="<?= site_url();?>petitionController/petitionTelusuri">Telusuri</a>
                 </li>
 
           </ul>
@@ -45,7 +45,7 @@
       </nav>
       <nav class="navbar navbar-expand-lg navbar-light bg-light nav-small">
         <div class="container">
-            <a class="navbar-brand" href="#">change.org</a>
+            <a class="navbar-brand" href="<?= site_url();?>petitionController/show">change.org</a>
             <ul class="navbar-nav mr-auto">
             </ul>
             <ul class="navbar-nav">
@@ -62,7 +62,7 @@
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="#">Petisi Saya</a>
                         <a class="dropdown-item" href="#">Pengaturan</a>
-                        <a class="dropdown-item" href="#">Mulai Petisi</a>
+                        <a class="dropdown-item" href="<?= site_url();?>petitionController/create">Mulai Petisi</a>
                         <a class="dropdown-item" href="#">Telusuri</a>
                         <a class="dropdown-item" href="#">Cari</a>
                         <div class="dropdown-divider"></div>
