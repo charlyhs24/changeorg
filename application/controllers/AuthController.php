@@ -36,10 +36,16 @@ class AuthController extends CI_Controller {
             );
             $user_auth = $this->User_model->getUser($user);
             if($user_auth){
-                var_dump($user_auth);
+                $this->session->set_userdata('user_auth', $user_auth);
+                redirect('petitionController');
             }
         }else {
             $this->index();
         }
+    }
+    public function checkUserData()
+	{
+        $userdata = $this->session->userdata('user_auth');
+		var_dump($userdata->id_users);
     }
 }

@@ -7,7 +7,7 @@ body {
 .card-mypetition {
     /* padding: 20px; */
     width: 600px;
-    height: 150px;
+    height: 175px;
     border-radius: 5px;
     border-top: 1px solid #ece9ec !important;
     border-left: 1px solid #ece9ec !important;
@@ -19,6 +19,7 @@ body {
     padding-bottom: 20px;
     margin-left: 10px;
 }
+
 .card-mypetition a {
     text-decoration: none;
     color: black;

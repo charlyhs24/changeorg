@@ -2,8 +2,18 @@
     <div class="landing-page text-center">
         <h1>Wadah dunia untuk perubahan</h1>
         <p>264.194.220 orang berpartisipasi dalam perubahan. <a href="">Kemenangan setiap harinya</a></p>
-        <a href="#" class="btn btn-danger">Mulai Petisi</a>
+        <a href="<?= site_url();?>petitionController/create" class="btn btn-danger">Mulai Petisi</a>
     </div>
+    <?php 
+        if ($this->session->flashdata('signature-success')) {
+    ?>
+        <script>
+            swal("Tanda Tangan Berhasil","<?php echo $this->session->flashdata('signature-success');?>", "success")
+        </script>
+
+    <?php
+        }
+    ?>
     <?php
     foreach ($petitions as $petition) {
     ?>
