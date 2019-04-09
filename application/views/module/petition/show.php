@@ -5,7 +5,7 @@
     <div class="row">
         <div class="col-md-8">
             <div class="petition-image">
-                <img src="<?= $petitions->url_media ?>" alt="">
+                <img src="<?= base_url();?>/public/asset/media/petition/<?= $petitions->url_media; ?>" alt="">
             </div>
             <p>
                 <img src="https://via.placeholder.com/30X30" class="rounded-circle">
@@ -19,7 +19,7 @@
         </div>
         <div class="col-md-4">
             <p>
-                <strong>129.248 telah menandatangani.</strong>Mari kita ke 150.000.
+                <strong><?= $petitions->jumlah_ttd;?> telah menandatangani.</strong>Mari kita ke 150.000.
             </p>
             <div class="progress">
                 <div class="progress-bar bg-orange" role="progressbar" style="width: <?= $petitions->jumlah_ttd;?>px" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>

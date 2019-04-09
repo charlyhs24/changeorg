@@ -38,6 +38,10 @@
     text-decoration: none;
     color: #363135;
 }
+.petisi-media {
+    width: 150px;
+    height: 150px;
+}
 .user-media {
     font-size: .8rem !important;
     top: 20% !important;

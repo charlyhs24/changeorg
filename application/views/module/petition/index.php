@@ -5,30 +5,31 @@
         <a href="#" class="btn btn-danger">Mulai Petisi</a>
     </div>
     <?php
-    for ($i=0; $i < 20; $i++) { 
-        # code...
+    foreach ($petitions as $petition) {
     ?>
     <div class="card-component">
-        <a href="#" class="link-block pbs phm">
+        <a href="<?= base_url('petitionController/show/'.$petition->id_petisi); ?>" class="link-block pbs phm">
             <div class="row">
                 <div class="col-sm-9">
-                    <p>Mempetisi jokowi, Joko Widodo</p>
-                    <h4>Koruptor Jangan Digaji, Pecat PNS Koruptor!</h4>
-                    <p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur deleniti fugit dolores dignissimos provident. Possimus tenetur quas atque quia accusamus labore beatae? Veniam quidem animi ipsa sed nulla, cum eveniet?</p>
-                    <img src="https://via.placeholder.com/30X30" class="rounded-circle" alt="">
-                    <strong>Nama User</strong>
+                    <p>Mempetisi Kepada, <?= $petition->kepada; ?></p>
+                    <h4><?= $petition->judul; ?></h4>
+                    <p id="description"><?= substr($petition->isi,0,150); ?></p>
+                    <img src="https://via.placeholder.com/30x30" class="rounded-circle" alt="">
+                    <strong><?=  $petition->nama_depan, $petition->nama_belakang ?></strong>
                 </div>
                 <div class="col-sm-3">
-                    <img src="https://via.placeholder.com/150x150" class="rounded" >
+                    <img src="<?= base_url();?>/public/asset/media/petition/<?= $petition->url_media; ?>" class="petisi-media rounded" >
                     <div class="user-media">
-                        <span class="fas fa-users"></span>103.608 pendukung
+                        <span class="fas fa-users"></span> <?= $petition->jumlah_ttd; ?> pendukung
                     </div>
                 </div>
 
             </div>
         </a>
     </div><br>
+
     <?php 
     }
     ?>
 </div>
+<script src="<?php echo base_url();?>public/asset/javascript/module/petition/index.js"></script>

@@ -28,7 +28,7 @@ $(document).ready(function(){
                     data.append('isi',isi)
                     e.preventDefault(); 
                          $.ajax({
-                             url:'petitionController/uploadImage',
+                             url:"uploadImage",
                              type:"post",
                              data: data,
                              processData:false,
@@ -36,7 +36,10 @@ $(document).ready(function(){
                              cache:false,
                              async:false,
                               success: function(data){
-                                // window.location.href = "petitionController/show";
+                                  if(data){
+                                      alert("data berhasil disimpan");
+                                  }
+                                window.location.href = "index";
                            }
                          });
                 })

@@ -25,6 +25,7 @@ class petitionController extends CI_Controller {
 	public function index()
 	{
 		$data['link'] = "public/asset/css/module/landing-page.css";
+		$data['petitions'] = $this->petition_model->getAllPetition();
 		$this->load->view('template/header',$data);
 		$this->load->view('module/petition/index');
         $this->load->view('template/footer');
@@ -36,9 +37,9 @@ class petitionController extends CI_Controller {
         $this->load->view('module/petition/create');
         $this->load->view('template/footer');
     }
-	public function show(){
+	public function show($id_petisi){
         $data['link'] = "public/asset/css/module/petition.css";
-        $data['petitions'] = $this->petition_model->getPetitionById(1);
+        $data['petitions'] = $this->petition_model->getPetitionById($id_petisi);
 		$this->load->view('template/header',$data);
 		$this->load->view('module/petition/show');
         $this->load->view('template/footer');
