@@ -39,7 +39,19 @@
                     <a class="nav-link" href="#"><i class="far fa-bell"></i></a>
               </li>
               <li class="nav-item active">
-                    <a class="nav-link" href="#"><i class="fas fa-user-circle"></i></a>
+                    <!-- <a class="nav-link" href="#"><i class="fas fa-user-circle"></i></a> -->
+                    <li class="nav-item dropdown active">
+                    <!-- <a class="nav-link" href="#"><i class="fas fa-user-circle"></i></a> -->
+                    <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user-circle"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Pengaturan</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Nama Akun</a>
+                        <a class="dropdown-item red" href="#">Keluar</a>
+                    </div>
+                </li>
               </li>
           </ul>
         <!-- </div> -->

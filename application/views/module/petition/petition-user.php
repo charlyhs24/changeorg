@@ -6,7 +6,7 @@
     </div>
     <nav class="nav">
         <a class="nav-link active" href="#petition_user" data-toggle="tab" >Telah memulai (<?= count($petitionUser); ?>)</a>
-        <a class="nav-link" href="#petition_ttd" data-toggle="tab" >Telah Menandatangani (4)</a>
+        <a class="nav-link" href="#petition_ttd" data-toggle="tab" >Telah Menandatangani (<?= count($ttdUser);?>)</a>
     </nav>
     <div class="tab-content">
         <?php

@@ -21,6 +21,9 @@ class petitionController extends CI_Controller {
     function __construct() {
         parent::__construct();
 		$this->load->model('petition_model');
+		if(!$this->session->userdata('user_auth')){
+			redirect('AuthController');
+		}
 	}
 	
 	public function index()
@@ -94,6 +97,7 @@ class petitionController extends CI_Controller {
 		$data['link'] = "public/asset/css/module/my-petition.css";
 		$userdata = $this->session->userdata('user_auth');
 		$data['petitionUser'] = $this->petition_model->getPetitionByUser($userdata);
+		$data['ttdUser'] = $this->petition_model->getPetitionTtd($userdata);
         $this->load->view('template/header',$data);
         $this->load->view('module/petition/petition-user',$data);
         $this->load->view('template/footer');

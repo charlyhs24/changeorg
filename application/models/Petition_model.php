@@ -73,5 +73,10 @@ class Petition_model extends CI_Model {
             }            
         }
     }
+    public function getPetitionTtd($userdata){
+        $this->db->where('id_users',$userdata->id_users);  
+        $query = $this->db->get('ttd_petisi');
+        return $query->result();
+    }
 }
 ?>
