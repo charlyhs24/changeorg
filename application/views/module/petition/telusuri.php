@@ -22,7 +22,7 @@
             foreach ($petition as $petitions) {
             ?>
             <div class="card-progress">
-                <a href="" class="pda">
+                <a href="<?= base_url('petitionController/show/'.$petitions->id_petisi); ?>" class="pda">
                     <div class="row">
                         <div class="col-sm-3">
                             <img width="150" height="150" src="<?= base_url();?>/public/asset/media/petition/<?= $petitions->url_media; ?>" class="rounded" >

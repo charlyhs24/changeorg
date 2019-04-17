@@ -4,7 +4,7 @@
     foreach ($terbaru as $terbarus) {
     ?>
     <div class="card-progress">
-        <a href="" class="pda">
+        <a href="<?= base_url('petitionController/show/'.$terbarus->id_petisi); ?>" class="pda">
             <div class="row">
                 <div class="col-sm-3">
                     <img width="150" height="150" src="<?= base_url();?>/public/asset/media/petition/<?= $terbarus->url_media; ?>" class="rounded" >
