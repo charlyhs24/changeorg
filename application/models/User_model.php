@@ -1,5 +1,8 @@
 <?php
 class User_model extends CI_Model {
+    public function setNewUser($user){
+        return $this->db->insert('users',$user);
+    }
     public function getUserProfile($user_id){
         $this->db->where('id_users', $user_id);
         $query = $this->db->get('users');

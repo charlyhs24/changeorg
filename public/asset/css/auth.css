@@ -1,0 +1,32 @@
+body{
+    background-image: none;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+.btn-primary-changeorg {
+    background: #ec2c22;
+    color: #fff;
+    border-color: #ec2c22;
+}
+.text-primary-link{
+    color: #ec2c22;
+    text-decoration: underline #ec2c22;
+}
+.btn-primary-facebook {
+    background: #37639e;
+    color: #fff;
+    border-color: #37639e;
+}
+.text-primary-link:hover {
+    color: black;
+    text-decoration: underline black;
+}
+.text-primary-changeorg{
+    color: grey;
+}
+.text-primary-changeorg:hover{
+    color: #ec2c22;
+    text-decoration: none;
+}

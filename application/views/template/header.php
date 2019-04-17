@@ -19,41 +19,54 @@
         <div class="container">
             <a class="navbar-brand" href="<?= site_url();?>">change.org</a>
  
-          <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="<?= site_url();?>petitionController/create">Mulai Petisi</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="<?= site_url();?>petitionController/petitionUser">Petisi Saya</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="<?= site_url();?>petitionController/petitionTelusuri">Telusuri</a>
-                </li>
+            <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="<?= site_url();?>petitionController/create">Mulai Petisi</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="<?= site_url();?>petitionController/petitionUser">Petisi Saya</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="<?= site_url();?>petitionController/petitionTelusuri">Telusuri</a>
+                    </li>
 
-          </ul>
-          <ul class="my-2 my-lg-0 navbar-nav">
-              <li class="nav-item active">
-                    <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
-              </li>
-              <li class="nav-item active">
-                    <a class="nav-link" href="#"><i class="far fa-bell"></i></a>
-              </li>
-              <li class="nav-item active">
-                    <!-- <a class="nav-link" href="#"><i class="fas fa-user-circle"></i></a> -->
-                    <li class="nav-item dropdown active">
-                    <!-- <a class="nav-link" href="#"><i class="fas fa-user-circle"></i></a> -->
-                    <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-user-circle"></i>
-                    </a>
-                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Pengaturan</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Nama Akun</a>
-                        <a class="dropdown-item red" href="#">Keluar</a>
-                    </div>
-                </li>
-              </li>
-          </ul>
+            </ul>
+            <?php
+                if ($this->session->userdata('user_auth')) {
+                    $userdata = $this->session->userdata('user_auth'); 
+            ?>
+                <ul class="my-2 my-lg-0 navbar-nav">
+                    <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                    </li>
+                    <li class="nav-item active">
+                            <a class="nav-link" href="#"><i class="far fa-bell"></i></a>
+                    </li>
+                    <li class="nav-item active">
+                            <!-- <a class="nav-link" href="#"><i class="fas fa-user-circle"></i></a> -->
+                            <li class="nav-item dropdown active">
+                            <!-- <a class="nav-link" href="#"><i class="fas fa-user-circle"></i></a> -->
+                            <a class="nav-link" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-user-circle"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Pengaturan</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#"><?= $userdata->nama_depan, $userdata->nama_belakang ?></a>
+                                <a class="dropdown-item red" href="<?= site_url();?>AuthController/logout">Keluar</a>
+                            </div>
+                        </li>
+                    </li>
+                </ul>
+            <?php
+                }else {
+            ?>
+            <ul class="my-2 my-lg-0 navbar-nav">
+                <a href="<?= site_url();?>AuthController" class="text-primary-changeorg"><strong>Masuk</strong></a>
+            </ul>
+            <?php
+                }
+            ?>
         <!-- </div> -->
         </div>
       </nav>

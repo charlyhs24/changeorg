@@ -88,6 +88,7 @@ ul li a .fa-user-circle{
 /* footer */
 .footer {
     /* position: ; */
+    background-image: none;
     display: block;
     left: 0;
     bottom: 0;
@@ -95,4 +96,16 @@ ul li a .fa-user-circle{
     background-color: red;
     color: white;
     text-align: center;
+}
+.bg-grey {
+    background-color: rgb(246, 244, 246);
+}
+.box-footer {
+    margin-top: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.text-primary-link{
+    color: #ec2c22;
+    text-decoration: underline #ec2c22;
 }
