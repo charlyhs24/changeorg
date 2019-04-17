@@ -36,7 +36,7 @@
                     <span class="text-danger"><?php echo form_error('komentar'); ?></span>
                     <p>
                         <small>
-                            <input type="checkbox"> Tunjukkan tanda tangan dan komentar saya di petisi ini
+                            <input type="checkbox"> Tunjukkan tanda tangan dan komentar saya di petisi ini 
                         </small>
                     </p>
                     <button type="submit" class="btn btn-primary btn-block">
@@ -55,4 +55,7 @@
             </div>
         </div>
     </div>
+<?php
+    $this->load->view('module/petition/komentar.php');
+?>
 </div>

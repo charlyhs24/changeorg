@@ -45,7 +45,8 @@ class petitionController extends CI_Controller {
 	
 	public function show($id_petisi){
         $data['link'] = "public/asset/css/module/petition.css";
-        $data['petitions'] = $this->petition_model->getPetitionById($id_petisi);
+		$data['petitions'] = $this->petition_model->getPetitionById($id_petisi);
+		$data['komentar'] = $this->petition_model->getAllKomentar($id_petisi);
 		$this->load->view('template/header',$data);
 		$this->load->view('module/petition/show');
         $this->load->view('template/footer');

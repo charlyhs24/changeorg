@@ -40,10 +40,11 @@ class Petition_model extends CI_Model {
     }
     public function updatePendukung($userdata,$formdata){
         $this->db->where('id_petitisi',$formdata['petitionId']);
+        $this->db->where('id_users',$userdata->id_users);
         $userSignature = $this->db->get('ttd_petisi');
         $userSignature = $userSignature->row();
         if($userSignature){
-            if($userSignature->status_ttd == 1){
+            if($userSignature->status_ttd == 1 ){
                 return "done";
             }else {
                 $this->db->set('status_ttd',1);
@@ -75,6 +76,12 @@ class Petition_model extends CI_Model {
     }
     public function getPetitionTtd($userdata){
         $this->db->where('id_users',$userdata->id_users);  
+        $query = $this->db->get('ttd_petisi');
+        return $query->result();
+    }
+    public function getAllKomentar($petition_id){
+        $this->db->join('users', 'users.id_users = ttd_petisi.id_users');
+        $this->db->where('id_petitisi',$petition_id);  
         $query = $this->db->get('ttd_petisi');
         return $query->result();
     }
