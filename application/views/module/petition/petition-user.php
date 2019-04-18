@@ -1,8 +1,18 @@
 <div class="container">
+    <?php
+        if ($this->session->flashdata('update-success')) {
+
+    ?>
+        <div class="alert alert-success">
+            <p><?= $this->session->flashdata('update-success'); ?></p>
+        </div>
+    <?php
+        }
+    ?>
     <div class="profile text-center">
         <h1><?php $userdata = $this->session->userdata('user_auth'); echo $userdata->nama_depan, $userdata->nama_belakang; ?></h1>
         <p><span><i class="fas fa-map-marker-alt"></i> <?= $userdata->negara; ?></span></p>
-        <a href="#" class="btn btn-profile btn-sm mbtn">Edit Profile</a>
+        <a href="<?= site_url()?>userController/profile" class="btn btn-profile btn-sm mbtn">Edit Profile</a>
     </div>
     <nav class="nav">
         <a class="nav-link active" href="#petition_user" data-toggle="tab" >Telah memulai (<?= count($petitionUser); ?>)</a>
