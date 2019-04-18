@@ -15,7 +15,8 @@ class User_model extends CI_Model {
         return $query->row();
     }
     public function updateUser($user){
-        return $this->db->replace('users', $user);
+        $this->db->where('id_users', $user['id_users']);
+        return $this->db->update('users', $user);
     }
     // public function updateProfile($petition_id){
     //     $this->db->join('users', 'users.id_users = petisi.id_users');
