@@ -15,6 +15,7 @@
         }
     ?>
     <?php
+    $this->load->view('module/petition/carousel');
     foreach ($petitions as $petition) {
     ?>
     <div class="card-component">

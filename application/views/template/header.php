@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?><?php echo $link; ?>">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title>Document</title>
+    <title>Change.org</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light nav-big">
@@ -87,14 +87,14 @@
                         <i class="fas fa-bars" ></i>                        
                     </a>
                     <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Petisi Saya</a>
+                        <a class="dropdown-item" href="<?= site_url();?>petitionController/petitionUser">Petisi Saya</a>
                         <a class="dropdown-item" href="#">Pengaturan</a>
                         <a class="dropdown-item" href="<?= site_url();?>petitionController/create">Mulai Petisi</a>
                         <a class="dropdown-item" href="#">Telusuri</a>
                         <a class="dropdown-item" href="#">Cari</a>
                         <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Nama Akun</a>
-                        <a class="dropdown-item red" href="#">Keluar</a>
+                        <a class="dropdown-item" href="#"></a>
+                        <a class="dropdown-item red" href="<?= site_url();?>AuthController/logout">Keluar</a>
                     </div>
                 </li>
             </ul>
