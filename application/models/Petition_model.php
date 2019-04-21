@@ -75,7 +75,9 @@ class Petition_model extends CI_Model {
         }
     }
     public function getPetitionTtd($userdata){
-        $this->db->where('id_users',$userdata->id_users);  
+        $this->db->where('id_users',$userdata->id_users); 
+        // $this->db->join('petisi', 'petisi.id_petisi = ttd_petisi.id_petitisi','left');
+        
         $query = $this->db->get('ttd_petisi');
         return $query->result();
     }

@@ -24,7 +24,7 @@
 
         ?>
         <div id="petition_user"class="tab-pane fade card-mypetition">
-            <a href="#" >
+            <a href="<?= base_url('petitionController/show/'.$petitionUsers->id_petisi); ?>" >
                 <span class="small">mempetisi <?= $petitionUsers->kepada; ?></span><br>
                 <h6><?= $petitionUsers->judul; ?></h6>
                 <p><?= substr($petitionUsers->isi,0,100);?><div class=""></div></p>
@@ -45,7 +45,7 @@
         <?php
             }
         ?>
-        <div id="petition_ttd"class="tab-pane fade card-mypetition">
+        <!-- <div id="petition_ttd"class="tab-pane fade card-mypetition">
             <a href="#" >
                 <span class="">mempetisi jokowi</span>
                 <h6>Judul Petisi</h6>
@@ -63,7 +63,7 @@
                     </div>
                 </div>
             </a>
-        </div>
+        </div> -->
     </div>
 </div>
 <script src="<?php echo base_url();?>public/asset/javascript/module/user/user.js"></script>
