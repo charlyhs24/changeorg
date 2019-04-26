@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 07, 2019 at 12:33 PM
+-- Generation Time: Apr 21, 2019 at 10:36 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.10
 
@@ -45,18 +45,8 @@ CREATE TABLE `petisi` (
 --
 
 INSERT INTO `petisi` (`id_petisi`, `judul`, `kepada`, `isi`, `url_media`, `id_users`, `jumlah_ttd`, `created_at`, `updated_at`) VALUES
-(1, 'Koruptor Jangan Digaji, Pecat PNS Koruptor !', 'prabowo', 'Bahagia rasanya, walau sudah mencuri uang negara tapi masih dibiayai negara. Senang rasanya meski sudah dijatuhi hukuman bersalah karena korupsi, akan tetapi masih bisa santai menikmati gaji. Tenang rasanya walau sudah dihukum bersalah karena korupsi, tetapi masih belum dipecat padahal sudah ada aturan yang mengikat.\"\r\n\r\nPernyataan itu bukanlah pujian terima kasih, melainkan kritikan karena kami risih mengetahui berita Pegawai Negeri Sipil (PNS) yang sudah divonis bersalah melakukan tindak pidana korupsi, namun masih bisa menikmati gaji lantaran belum dipecat.\r\n\r\nSaya masih ingat betul pada awal Februari lalu data Indonesia Corruption Watch (ICW) menyebutkan ada 1.400-an lebih PNS koruptor yang belum dipecat. Hingga saat ini proses pemecatan PNS pun tidak jelas.\r\n\r\nBelakangan saya mengetahui kembali dari media online CNN, bahwa ada 1.879 PNS yang sampai berita itu dilansir belum juga dipecat. Permasalahan tersebut terang saja berpotensi menimbulkan kerugian negara yang cukup besar. Jika persoalan PNS koruptor dibiarkan berlarut, maka negara sama saja akan terus mengahamburkan uangnya dengan percuma untuk para pencuri uang negara atau koruptor!', 'https://assets.change.org/photos/1/jm/xs/tAjmXshApnSykOY-800x450-noPad.jpg?1550421921', 1, 150, '2019-04-05 00:37:16', '0000-00-00 00:00:00'),
-(2, 'lorem', 'prabowo', 'tidak ada', '2f4b097f15e75ae2601fc95753b97cb7.png', 1, 0, '2019-04-06 21:42:05', '0000-00-00 00:00:00'),
-(3, 'lorem', 'prabowo', 'tidak ada', 'd13bd44fe23302e36468523b959981df.png', 1, 0, '2019-04-06 21:42:34', '0000-00-00 00:00:00'),
-(4, 'lorem', 'jokowi', 'asd', '79a723cc64bfef07de95071cf9519a2f.png', 1, 0, '2019-04-06 21:43:20', '0000-00-00 00:00:00'),
-(5, 'lorem', 'kimi hime', '123', 'fa0f4cfc600134fc1606a71c122a4acd.png', 1, 0, '2019-04-06 21:44:36', '0000-00-00 00:00:00'),
-(6, 'lorem', 'kimi hime', '123', '9c48b06290cf2d541eb1d434f068abf7.png', 1, 0, '2019-04-06 21:44:50', '0000-00-00 00:00:00'),
-(7, 'lorem', 'kimi hime', '123', '3e990bc38f752ca891c8cf7f04ef2616.png', 1, 0, '2019-04-06 21:44:51', '0000-00-00 00:00:00'),
-(8, 'lol', 'asd', 'da', '9a2f9ad80ed69571c6517c314a25e070.png', 1, 0, '2019-04-06 21:45:19', '0000-00-00 00:00:00'),
-(9, '123', '123', '123', '13edfe2b11a6c521ee62fb90c17ee1ce.png', 1, 0, '2019-04-06 21:48:59', '0000-00-00 00:00:00'),
-(10, '123', '123', '123', '7c64ded411b09193ee7619a6cec5566a.png', 1, 0, '2019-04-06 21:56:16', '0000-00-00 00:00:00'),
-(11, '123', '123', '123', 'bc8a835d22e6361282fb6db7a51592ab.png', 1, 0, '2019-04-06 21:58:49', '0000-00-00 00:00:00'),
-(12, '321', '321', '321', '4587c916b41da0fb4daf9d06c48a1082.png', 1, 0, '2019-04-06 22:04:00', '0000-00-00 00:00:00');
+(14, 'Tolak Kembalinya Dwi-Fungsi ABRI melalui Penempatan TNI di Lembaga Sipil', 'Joko Widodo', 'TNI berwacana untuk restrukturisasi dan reorganisasi. Termasuk menempatkan militer ke jabatan-jabatan sipil, menambah unit dan struktur baru di TNI, meningkatkan status jabatan dan pangkat di beberapa unit, dan memperpanjang usia pensiun anggota TNI. Ini salah satunya karena banyak perwira TNI yang tidak memiliki jabatan atau non-job.\r\n\r\nRencana ini banyak diprotes karena seperti kembali ke zaman Orba dulu saat ada Dwifungsi ABRI. Saat itu Dwifungsi digunakan untuk memastikan Soeharto bisa berkuasa hingga 32 Tahun.  Ini jelas enggak sejalan dengan semangat reformasi dan dapat mengganggu sistem demokrasi kita.\r\n\r\nSejak era reformasi, militer enggak bisa lagi menduduki jabatan sipil dan politik seperti anggota DPR, Kepala Daerah, atau jabatan di Kementerian. TNI hanya bisa menduduki jabatan yang ada kaitannya dengan pertahanan. Itu semua udah diatur dalam UU TNI.\r\n\r\nKarena itu, kami menilai rencana penempatan militer aktif pada jabatan sipil tidak tepat. Seharusnya restrukturisasi TNI itu harus melihat pada efektivitasnya menjalankan fungsi pertahanan dan tentunya nggak boleh bertentangan dengan agenda reformasi TNI.\r\n\r\nKami mendesak kepada DPR dan Presiden Joko Widodo agar tidak mendukung agenda restrukturisasi dan reorganisasi TNI yang bertentangan dengan reformasi TNI melalui revisi UU TNI ataupun melalui peraturan perundang-undangan lainnya.\r\n\r\nDukung petisi ini agar kita tidak kembali ke zaman Orde Baru yang militeristik dan tak demokratis.', '25416743c83458cf6dd2456f83c7b6f5.jpg', 2, 5, '2019-04-18 09:55:07', '0000-00-00 00:00:00'),
+(16, 'Pemilu ulang pilpres di Sydney Australia', 'Presiden Republik Indonesia Joko Widodo', 'Komunitas masyarat Indonesia di Sydney Australia menginginkan Pemilu Pilpres ulang. Di karenakan pada pemilu 13 april 2019 yg digelar diSydney ratusan warga Indonesia yg mempunyai hak pilih TIDAK diijinkan melakukan haknya padahal sudah ada antrian panjang di depan TPS Townhall dari siang. Proses yg panjang dan ketidakmampuan PPLN Sydney sebagai penyelenggara menyebabkan antrian tidak bisa berakhir sampai jam 6 sore waktu setempat. Sehingga ratusan orang yg sudah mengantri sekitar 2 jam tidak dapat melakukan hak dan kewajibannya untuk memilih karena PPLN dengan sengaja menutup TPS tepat jam 6 sore tanpa menghiraukan ratusan pemilih yg mengantri di luar. Untuk itulah komunitas masyarakat Indonesia menuntut pemilu ulang 2019 di Sydney Australia. Besar harapan kami KPU, Bawaslu dan Presiden Joko Widodo bisa mendengar, menyelidiki dan menyetujui tuntutan kami. Sekian dan Terimakasih. ', '2ed8f3915df1ddef9356c1a5de8d5d0e.jpg', 1, 1, '2019-04-18 10:08:23', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -67,12 +57,20 @@ INSERT INTO `petisi` (`id_petisi`, `judul`, `kepada`, `isi`, `url_media`, `id_us
 CREATE TABLE `ttd_petisi` (
   `id_ttd_petisi` int(11) NOT NULL,
   `komentar` text NOT NULL,
-  `status_ttd` varchar(20) NOT NULL,
   `id_petitisi` int(11) NOT NULL,
   `id_users` int(11) NOT NULL,
+  `status_ttd` int(11) NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `ttd_petisi`
+--
+
+INSERT INTO `ttd_petisi` (`id_ttd_petisi`, `komentar`, `id_petitisi`, `id_users`, `status_ttd`, `created_at`, `updated_at`) VALUES
+(18, 'saya setuju ', 14, 1, 1, '2019-04-18 09:55:07', '0000-00-00 00:00:00'),
+(19, 'setiap warga negara memiliki hak untuk memilih !!!!', 16, 4, 1, '2019-04-18 10:08:23', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -82,6 +80,8 @@ CREATE TABLE `ttd_petisi` (
 
 CREATE TABLE `users` (
   `id_users` int(11) NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `password` varchar(255) NOT NULL,
   `nama_depan` varchar(255) NOT NULL,
   `nama_belakang` varchar(255) NOT NULL,
   `tentang_saya` text NOT NULL,
@@ -92,15 +92,20 @@ CREATE TABLE `users` (
   `alamat` varchar(255) NOT NULL,
   `kode_pos` int(11) NOT NULL,
   `bahasa` varchar(255) NOT NULL,
-  `nomor_telepon` varchar(255) NOT NULL
+  `nomor_telepon` varchar(255) NOT NULL,
+  `picture_url` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id_users`, `nama_depan`, `nama_belakang`, `tentang_saya`, `kota`, `negara`, `twitter`, `tautan_singkat`, `alamat`, `kode_pos`, `bahasa`, `nomor_telepon`) VALUES
-(1, 'charly ', 'haholongan situmorang', 'nothing', 'bandung', 'indonesia', '@charly', 'nothing', 'bandung', 14045, 'indonesia', '081311051507');
+INSERT INTO `users` (`id_users`, `email`, `password`, `nama_depan`, `nama_belakang`, `tentang_saya`, `kota`, `negara`, `twitter`, `tautan_singkat`, `alamat`, `kode_pos`, `bahasa`, `nomor_telepon`, `picture_url`) VALUES
+(1, 'charly@app.com', '7abe286d9a05a45357a17818577732db', 'charly ', 'haholongan situmorang', 'nothing', 'jakarta', 'indonesia', '@charly', 'nothing', 'bandung', 14045, 'indonesia', '081311051507', 'aeddcd6f0f52dadfb32d26b2376a1d25.JPG'),
+(2, 'faris@app.com', '7abe286d9a05a45357a17818577732db', 'Faris', 'Muhammad', 'nothing', 'bandung', 'indonesia', 'faris@twitter', 'nothing', 'bandung', 14045, 'indonesia', '081212121212', ''),
+(3, 'rocky@app.com', 'e03f4e7d6462e4ed73970b479f3c3280', 'rocky', 'gerung', '', '', '', '', '', '', 0, '', '', 'user.jpg'),
+(4, 'telkomuniversity@app.com', '55205d2520d2ec0d95d5b89096484157', 'telkom ', 'university', '', 'bandung', 'indonesia', '@telu', '', 'bandung', 40258, 'indonesia', '081311123', '96edba332f87f06a24e75a486ed9a2b5.png'),
+(5, 'daniel@app.com', '3215405a06fc83d002fa010bfbc99f7c', 'daniel', 'christoper', '', '', '', '', '', '', 0, '', '', 'user.jpg');
 
 --
 -- Indexes for dumped tables
@@ -135,19 +140,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `petisi`
 --
 ALTER TABLE `petisi`
-  MODIFY `id_petisi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id_petisi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT for table `ttd_petisi`
 --
 ALTER TABLE `ttd_petisi`
-  MODIFY `id_ttd_petisi` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_ttd_petisi` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id_users` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_users` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- Constraints for dumped tables
