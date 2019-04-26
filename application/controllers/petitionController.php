@@ -53,6 +53,7 @@ class petitionController extends CI_Controller {
 	}
 
 	public function uploadImage(){
+		$userdata = $this->session->userdata('user_auth');
 		$config['upload_path']          = './public/asset/media/petition/';
 		$config['allowed_types']        = 'gif|jpg|png';
 		$config['encrypt_name'] 		= TRUE;
@@ -68,7 +69,7 @@ class petitionController extends CI_Controller {
 					'kepada' => $this->input->post('kepada'),
 					'isi' => $this->input->post('isi'),
 					'url_media' => $file_name,
-					'id_users' => 1,
+					'id_users' => $userdata->id_users,
 					'jumlah_ttd' => 0
 				);
 				$result = $this->petition_model->insertPetition($data);
